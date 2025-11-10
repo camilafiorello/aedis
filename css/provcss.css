@@ -1,0 +1,165 @@
+/* ESTILOS GENERALES  */
+body {
+
+  margin: 0;
+  background-color: #7a91b0; 
+  color: white;
+}
+
+h1, h2 {
+  font-family: 'Yrsa', Bold;
+  text-align: center;
+  font-weight: 800;
+  color: white;
+}
+
+section.contenedor {
+  padding: 60px 10%;
+}
+
+/*  BLOQUES DE PROVEEDORES */
+.bloque-proveedores {
+  margin-bottom: 60px;
+}
+
+.bloque-proveedores strong {
+  display: block;
+  font-size: 1.2rem;
+  margin-bottom: 15px;
+  font-family:'Roboto',bold
+}
+
+/* Contenedor de columnas */
+.proveedores-container {
+  display: flex;
+  justify-content: space-between;
+  gap: 40px;
+  border-left: 1px solid rgba(255,255,255,0.3);
+  padding-left: 20px;
+}
+
+.columna {
+  font-family: 'yrsa';
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.columna span {
+  color: #e3e7ee;
+}
+
+.columna.ultima {
+  text-align: right;
+}
+
+/* Línea divisoria vertical entre columnas */
+.proveedores-container .columna:not(:last-child) {
+  border-right: 1px solid rgba(255,255,255,0.2);
+  padding-right: 20px;
+}
+
+/*  SECCIÓN FORMULARIO */
+.formulario-container {
+  background-color: #4C68B8; 
+  padding: 50px 10%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.formulario-container h2 {
+  text-align: center;
+  margin-bottom: 30px;
+  font-weight: 700;
+}
+
+form {
+    font-family: 'roboto', regular;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 40px;
+  width: 100%;
+  max-width: 900px;
+}
+
+/* Lado izquierdo del formulario */
+.inputs-left {
+    font-family: 'roboto', regular;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  flex: 1;
+  min-width: 250px;
+}
+
+.inputs-left label {
+  font-weight: 600;
+}
+
+.inputs-left input {
+  background-color: #b9c2d3;
+  border: none;
+  border-radius: 20px;
+  padding: 10px 15px;
+  color: #333;
+}
+
+/* Campo de texto y botón */
+.campo-textarea-container {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  gap: 15px;
+  min-width: 250px;
+}
+
+.campo-textarea-container textarea {
+  background-color: #b9c2d3;
+  border: none;
+  border-radius: 15px;
+  padding: 10px;
+  resize: none;
+  height: 150px;
+  color: #333;
+}
+
+/* Botón naranja */
+.campo-textarea-container button {
+ font-family: 'roboto', semibold;
+  background-color: #e8762a;
+  border: none;
+  border-radius: 20px;
+  padding: 12px;
+  color: white;
+  font-weight: 700;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.campo-textarea-container button:hover {
+  background-color: #cf651f;
+}
+
+/*  RESPONSIVE  */
+@media (max-width: 768px) {
+  .proveedores-container {
+    flex-direction: column;
+    border-left: none;
+    padding-left: 0;
+  }
+
+  .columna {
+    border-right: none !important;
+    text-align: left !important;
+  }
+
+  form {
+    flex-direction: column;
+  }
+
+  .campo-textarea-container textarea {
+    height: 120px;
+  }
+}
