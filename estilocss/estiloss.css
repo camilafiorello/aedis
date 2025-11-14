@@ -1,0 +1,516 @@
+/* Estilos en general */
+body {
+    font-family: 'Yrsa', 'Roboto', 'Poppins';
+    padding-top: 90px;
+}
+
+/* BARRA DE NAVEGACION */
+.navbar {
+    background-color: #4C68B8 !important;
+    font-family: 'Yrsa', Bold;
+    font-weight: 500;
+    letter-spacing: 0.5px;
+    padding: 0.6rem 1.5rem;
+}
+
+.navbar-brand {
+    font-weight: 500;
+    color: #ffffff; 
+    font-size: 1.1rem;
+}
+
+.navbar-brand img {
+    height: 120px; /* Aumenta el tamaño del logo */
+    width: 120px; 
+    object-fit: contain; 
+    margin-top: -13px; 
+    margin-bottom: -10px;
+}
+
+
+.navbar-nav .nav-link {
+    color: #ffffff;
+    margin: 0 10px;
+    font-size: 0.95rem;
+    text-transform: uppercase;
+    transition: color 0.3s ease;
+}
+
+.navbar-nav .nav-link:hover,
+.navbar-nav .nav-link.active {
+    color: #cbd7f3 !important;
+    text-decoration: underline;
+    text-underline-offset: 4px; /* tamaño del espacio del subrayado*/
+}
+
+.navbar-toggler {
+    border: none;
+}
+
+.navbar-toggler-icon {
+    filter: brightness(0) invert(1);
+}
+
+/* Hero (Donde se encuentra el video) */
+.hero-section {
+    position: relative;
+    font-family: 'Yrsa', semibold;
+    font-size: 1.2rem;
+    text-align: center;
+    color: white;
+    background-color:#8C4227;
+}
+
+.hero-overlay {
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -0%);
+    background-color: #8C4227;
+    color: white;
+    padding: 50px;
+    width: 70%;
+    max-width: 900px
+}
+.hero-overlay .diferencia {
+    font-family: 'Brush Script MT', cursive;
+    font-size: 3rem;
+    color: hsl(30, 10%, 96%);
+}
+.hero-overlay p {
+  font-family: 'Yrsa',light;
+  font-size: 1.4rem;
+  font-weight: 400;
+  margin-top: 15px;
+  line-height: 1.8;
+  color: #f5f5f5;
+}
+
+.hero-video {
+    height: 70vh;
+    width: 100%;
+    object-fit: cover;
+}
+
+/* DATOS Y ESTÁDISTICAS */
+.stats-section {
+    background-color: #4C68B8;
+    font-family: 'Yrsa', bold
+}
+.stats-section h4 {
+  font-family: 'yrsa'bold;
+    margin-top: 10px;
+    font-weight: 500;
+}
+.stats-section p {
+    margin: 0;
+    color: #e1e1e1;
+}
+
+.stats {
+  background-color: #4C68B8;
+}
+
+.stats i {
+  display: block;
+}
+
+.stats h3 {
+  font-family: 'yrsa',bold;
+  font-weight: bold;
+  font-size: 1.5rem;
+  margin-bottom: 0.3rem;
+}
+
+
+/* NUESTRAS OBRAS */
+.obras-section {
+    background-color: #f9f9f9;
+    font-family: 'Roboto', flex;
+    font-size: 1.2rem;
+}
+.obras-section h2 {
+    color: #2c2c2c;
+    font-family:'Yrsa', Bold;
+    font-size: 2.4rem;
+}
+.obras-section img {
+    border-radius: 8px;
+    transition: transform 0.3s;
+}
+.obras-section img:hover {
+    transform: scale(1.05);
+}
+/*FOOTER SECCION*/
+.footer-section {
+  background-color: #A6937C;
+  color: #fff;
+  font-size: 0.9rem;
+}
+
+.footer-logo {
+  width: 110px;
+  height: auto;
+}
+
+.footer-info p {
+  margin: 0.2rem 0;
+  text-align: center;
+}
+
+.footer-social {
+  display: flex;
+  align-items: center;
+}
+.footer-social {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 1.6rem; 
+}
+
+.footer-social .social-icons a {
+  color: #fff;
+  font-size: 1.4rem;
+  margin: 0 6px;
+  transition: color 0.3s;
+}
+
+.footer-social .social-icons a:hover {
+  color: #dcdcdc;
+}
+
+.footer-section .btn-primary {
+  font-family: 'Yrsa', bold;
+  background-color: #4C68B8;
+  border: none;
+  padding: 0.4rem 1.2rem;
+  font-size: 0.9rem;
+  border-radius: 20px;
+}
+
+.footer-section .btn-primary:hover {
+  background-color: #3c539a;
+}
+
+/* RESPONSIVE */
+@media (max-width: 992px) {
+  .container-fluid {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .footer-left, .footer-right {
+    margin-bottom: 0.8rem;
+  }
+
+  .footer-right {
+    flex-direction: column;
+  }
+
+  .footer-right .btn {
+    margin-bottom: 0.6rem;
+  }
+  @media (max-width: 768px) {
+  .footer-social .social-icons i {
+    font-size: 1.5rem; 
+  }
+}
+}
+
+ /*Nuetras obras y proyectos.*/
+body {
+  margin: 0;
+  font-family: "Poppins", sans-serif;
+}
+.proyectos {
+  background-color: #fff;
+}
+.img-wrapper img {
+  display: block;
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.img-wrapper {
+  position: relative;
+  display: inline-block;
+}
+
+.img-wrapper::before {
+  content: "";
+  position: absolute;
+  bottom: -15px;   /* distancia hacia abajo */
+  left: -15px;     /* distancia hacia la izquierda */
+  width: 100%;
+  height: 100%;
+  background-color: #A6543A;
+  border-radius: 10px;
+  z-index: 0;
+  transition: all 0.3s ease;
+}
+
+.proyectos h4{
+  color: #4C68B8;
+}
+
+.img-bg {
+  display: none;
+}
+.poppins-bold {
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+}
+.mini-img {
+  width: 90px;
+  height: auto;
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.15);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* PARTE RESPONSIVE*/
+@media (max-width: 768px) {
+  .titulo-proyecto {
+    font-size: 1.3rem;
+    text-align: center;
+  }
+
+  .mini-img {
+    width: 80px;
+    margin-bottom: 0.5rem;
+  }
+
+  .proyectos .row {
+    text-align: center;
+  }
+}
+
+/* Fondo de la sección de contacto */
+.contacto {
+  background-color: #fefcfb;
+  min-height: 80vh;
+  padding-top: 120px; /* espacio para la barra de navegación */
+}
+
+/* Caja del formulario */
+.contacto {
+  background: linear-gradient(to right, #d9c3a3 50%, #ffffff 50%);
+}
+
+.contacto-form {
+  font-family:'Yrsa',semibold ;
+  background-color: #4C68B8;
+  color: white;
+  max-width: 450px;
+  width: 80%;
+}
+/* Etiquetas e inputs */
+.contacto-form .form-label {
+  font-weight: 500;
+}
+
+.contacto-form .form-control {
+  border: none;
+  border-radius: 0.25rem;
+  padding: 0.5rem;
+}
+
+/* Botón de enviar mensaje */
+.btn-enviar {
+  background-color: #BF7245;
+  color: white;
+  border: none;
+  border-radius: 2rem;
+  font-weight: 600;
+  transition: background-color 0.3s ease;
+}
+
+.btn-enviar:hover {
+  background-color: #A6937C;
+}
+
+/* Sección de la ubicacion*/
+.ubicacion h3 {
+  font-family: 'Yrsa',Bold;
+  font-size: 1.4rem;
+}
+
+.contacto h3 {
+  font-family:'yrsa',Bold;
+  font-weight: 700;
+  color: #333;
+  letter-spacing: 0.5px;
+}
+
+.contacto p {
+  font-family: 'Roboto',flex;
+  font-size: 1.1rem;
+  color: #555;
+}
+@media (max-width: 767px) {
+  .contacto {
+    background: linear-gradient(to bottom, #d9c3a3 50%, #ffffff 50%);
+  }
+}
+
+@media (max-width: 991px) {
+  .contacto .row {
+    flex-direction: column; 
+    align-items: center;    
+    text-align: center;     
+  }
+
+  .contacto-form {
+    margin: 0 auto 2rem auto; /* Centra el formulario */
+    width: 90%;        
+    max-width: 450px;   
+  }
+
+  .ubicacion {
+    width: 90%;
+    max-width: 600px;
+    margin: 0 auto;
+  }
+
+  .ubicacion iframe {
+    width: 100%;  
+    height: 300px;
+    border-radius: 10px;
+  }
+}
+
+/* SECCION DE NOTICIAS */
+.noticias h2 {
+  font-family: 'Yrsa',semibold;
+  font-size: 2.5rem;
+  letter-spacing: 1.5px;
+  color: #000;
+}
+
+.noticias .card {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.noticias .card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+}
+.noticias .card p{
+  font-size: 0.9rem;
+}
+
+.noticias .card-img-top {
+  border-radius: 8px 8px 0 0;
+}
+
+.noticias .card-body {
+  text-align: left;
+}
+/* SECCION DE NOVEDADES */
+.novedades {
+  background-color: #4C68B8;
+  padding: 4rem 0;
+}
+
+.novedades h2 {
+  font-family:'Yrsa',semibold;
+  font-size: 2rem;
+  font-weight: 700;
+}
+
+.novedades p {
+  font-family: 'Poppins', sans-serif;
+  font-size: 1.1rem;
+  line-height: 1.7;
+}
+/* BOTONES DE LA SECCIÓN NOTICIAS */
+.noticias .btn {
+  font-family: 'Poppins'semibold;
+  font-size: 0.8rem;
+  border-radius: 25px;
+  padding: 6px 18px;
+  border: 2px solid #cf651f;
+  background-color: #cf651f;
+  color: #fff;
+  text-transform: uppercase;
+  transition: all 0.3s ease;
+}
+.noticias .btn:hover {
+  background-color: #4C68B8;
+  border-color: #3c539a;
+  color: #faf7f7;
+  transform: translateY(-2px);
+  box-shadow: 0 3px 6px rgba(0,0,0,0.15);
+}
+
+
+/* RESPONSIVE MEDIA QUERIES */
+@media (max-width: 768px) {
+  .noticias .card {
+    margin-bottom: 2rem;
+  }
+
+  .novedades p {
+    font-size: 1.3rem;
+    padding: 0 1.5rem;
+  }
+}
+
+/* AEDIS */
+.aedis-section {
+  font-family:'Poppins', sans-serif;
+  background-color: #A6937C;
+  color: #fff;
+}
+.poppins-regular {
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+.aedis-section h2 {
+  color: #fff;
+}
+
+/* MISIÓN */
+.mision-section {
+  background-color: #ffffff;
+  font-family: 'Poppins', regular;
+}
+.poppins-regular {
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+.mision-section h3 {
+  color: #cf651f !important;
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+}
+.mision-section p {
+  color:#cf651f ;
+}
+
+
+/* VISIÓN */
+.vision-section {
+  background-color: #BF7245; 
+}
+.vision-section h3 {
+  color: #fff;
+}
+
+/* Imagenes */
+img {
+  object-fit: cover;
+}
+
+/* Espaciado adicional en móviles */
+@media (max-width: 767px) {
+  .aedis-section, .mision-section, .vision-section {
+    text-align: center;
+  }
+}
